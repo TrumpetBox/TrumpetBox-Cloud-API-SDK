@@ -1,0 +1,1530 @@
+{
+	"info": {
+		"_postman_id": "a04e59aa-0382-407d-8d3c-c90922923e5f",
+		"name": "TrumpetBox Cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Address Book - Delete Contact From Account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "API_KEY",
+							"value": "{{API_KEY}}",
+							"description": "Your TrumpetBox Cloud API KEY",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}",
+							"description": "ID of contact number",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}delete/contact?key={{API_KEY}}&id={{id}}",
+					"host": [
+						"{{url}}delete"
+					],
+					"path": [
+						"contact"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						}
+					]
+				},
+				"description": "Delete a contact from your TrumpetBox Cloud platform."
+			},
+			"response": [
+				{
+					"name": "Address Book - Delete Contact From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "API_KEY",
+									"value": "{{API_KEY}}",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/delete/contact?key={{API_KEY}}&id={{id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"delete",
+								"contact"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 19:26:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"Contact number deleted successfully!\",\"data\":false}"
+				}
+			]
+		},
+		{
+			"name": "Address Book - Delete Group From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}delete/group?key={{API_KEY}}&id={{id}}",
+					"host": [
+						"{{url}}delete"
+					],
+					"path": [
+						"group"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "Your TrumpetBox Cloud API KEY"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}",
+							"description": "ID of contact group"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Address Book - Delete Group From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}delete/group?key={{API_KEY}}&id={{id}}",
+							"host": [
+								"{{url}}delete"
+							],
+							"path": [
+								"group"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "Your TrumpetBox Cloud API KEY"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}",
+									"description": "ID of contact group"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 20:46:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "90"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"Contact group deleted successfully!\",\"data\":false}"
+				}
+			]
+		},
+		{
+			"name": "Address Book - Get Contacts From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/contacts?key={{API_KEY}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "Your TrumpetBox Cloud API KEY"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Address Book - Get Contacts From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/contacts?key={{API_KEY}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "Your TrumpetBox Cloud API KEY"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 21:25:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "152"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"List of saved contacts\",\"data\":{\"+15175555557\":{\"gid\":3,\"group\":\"testGroup\",\"phone\":\"+15175555557\",\"name\":\"Tester 3\"},\"+15175555556\":{\"gid\":3,\"group\":\"testGroup\",\"phone\":\"+15175555556\",\"name\":\"Tester 2\"},\"+15175555555\":{\"gid\":3,\"group\":\"testGroup\",\"phone\":\"+15175555555\",\"name\":\"Tester 1\"}}}"
+				}
+			]
+		},
+		{
+			"name": "Address Book - Get Groups From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/groups?key={{API_KEY}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"groups"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "Your TrumpetBox Cloud API KEY"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Address Book - Get Groups From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/groups?key={{API_KEY}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"groups"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "Your TrumpetBox Cloud API KEY"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 21:37:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "99"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"List of contact groups\",\"data\":{\"3\":{\"id\":3,\"name\":\"testGroup\"}}}"
+				}
+			]
+		},
+		{
+			"name": "Devices - Get A Single Device Info From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/device?key={{API_KEY}}&id={{id}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"device"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}",
+							"description": "ID of the device"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Devices - Get Device Info From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/device?key={{API_KEY}}&id={{id}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"device"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 21:54:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "206"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"Device information for LM-X210(G)\",\"data\":{\"name\":\"LM-X210(G)\",\"version\":8.0999999999999996447286321199499070644378662109375,\"version_name\":\"Android Oreo\",\"manufacturer\":\"LGE\",\"messages\":{\"sent\":74,\"received\":54},\"timestamp\":\"1594057191\"}}"
+				}
+			]
+		},
+		{
+			"name": "Devices - Get All Device Info From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/devices?key={{API_KEY}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"devices"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Devices - Get All Device Info From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/devices?key={{API_KEY}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"devices"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 22:14:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"List of registered devices\",\"data\":[{\"id\":4,\"name\":\"LM-X210(G)\",\"version\":8,\"version_name\":\"Android Oreo\",\"manufacturer\":\"LGE\",\"timestamp\":1594057191}]}"
+				}
+			]
+		},
+		{
+			"name": "Messages - Get Pending Messages From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/pending?key={{API_KEY}}&device={{device}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"pending"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						},
+						{
+							"key": "device",
+							"value": "{{device}}",
+							"description": "ID of the specific device you want to get pending messages (Optional)\n\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Messages - Get Pending Messages From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/pending?key={{API_KEY}}&device={{device}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"pending"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "device",
+									"value": "{{device}}",
+									"description": "ID of the specific device you want to get pending messages (Optional)\n\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 22:22:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"Messages waiting to be sent on LM-X210(G)\",\"data\":[]}"
+				}
+			]
+		},
+		{
+			"name": "Messages - Get Received Messages From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/received?key={{API_KEY}}&limit={{limit}}&page={{page}}&device={{device}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"received"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						},
+						{
+							"key": "limit",
+							"value": "{{limit}}",
+							"description": "Number of results to return, default is 10 (Optional)"
+						},
+						{
+							"key": "page",
+							"value": "{{page}}",
+							"description": "Pagination number to navigate result sets (Optional)"
+						},
+						{
+							"key": "device",
+							"value": "{{device}}",
+							"description": "Get received messages from specific device (Optional)"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Messages - Get Received Messages From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/received?key={{API_KEY}}&limit={{limit}}&page={{page}}&device={{device}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"received"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "TrumpetBox Cloud API KEY"
+								},
+								{
+									"key": "limit",
+									"value": "{{limit}}",
+									"description": "Number of results to return, default is 10 (Optional)"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}",
+									"description": "Pagination number to navigate result sets (Optional)"
+								},
+								{
+									"key": "device",
+									"value": "{{device}}",
+									"description": "Get received messages from specific device (Optional)"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 22:33:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "341"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"List of received messages from LM-X210(G)\",\"data\":[{\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Ok babe \",\"timestamp\":1594746823},{\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Checked in\",\"timestamp\":1594746716},{\"device\":4,\"phone\":\"+919078654321\",\"message\":\" Free Msg: Unable to send message - Message Blocking is active.\",\"timestamp\":1594495339},{\"device\":4,\"phone\":\"+919078654321\",\"message\":\" Free Msg: Unable to send message - Message Blocking is active.\",\"timestamp\":1594495338},{\"device\":4,\"phone\":\"+919078654321\",\"message\":\" Free Msg: Unable to send message - Message Blocking is active.\",\"timestamp\":1594495337},{\"device\":4,\"phone\":\"+918088993456\",\"message\":\" Free Msg: Unable to send message - Message Blocking is active.\",\"timestamp\":1594495330},{\"device\":4,\"phone\":\"+918088993456\",\"message\":\" Free Msg: Unable to send message - Message Blocking is active.\",\"timestamp\":1594495329},{\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Yes I can barely hear u, but I saw u was back\",\"timestamp\":1594249796},{\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Trumpetbox \",\"timestamp\":1594173731},{\"device\":4,\"phone\":\"+16164488533\",\"message\":\"Welcome\",\"timestamp\":1594171813}]}"
+				}
+			]
+		},
+		{
+			"name": "Messages - Get Sent Messages From Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}get/sent?key={{API_KEY}}&page={{page}}&device={{device}}&api={{api}}&priority={{priority}}&limit={{limit}}",
+					"host": [
+						"{{url}}get"
+					],
+					"path": [
+						"sent"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						},
+						{
+							"key": "page",
+							"value": "{{page}}",
+							"description": "Pagination number to navigate result sets (Optional)\n\n"
+						},
+						{
+							"key": "device",
+							"value": "{{device}}",
+							"description": "Get messages only from specific device (Optional)"
+						},
+						{
+							"key": "api",
+							"value": "{{api}}",
+							"description": "Only get sent messages by API (Optional)\n1 = Yes\n0 = No (Default)"
+						},
+						{
+							"key": "priority",
+							"value": "{{priority}}",
+							"description": "Only get prioritized sent messages (Optional)\n1 = Yes\n0 = No (Default)"
+						},
+						{
+							"key": "limit",
+							"value": "{{limit}}",
+							"description": "Number of results to return, default is 10 (Optional)\n\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Messages - Get Sent Messages From Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}get/sent?key={{API_KEY}}&page={{page}}&device={{device}}&api={{api}}&priority={{priority}}&limit={{limit}}",
+							"host": [
+								"{{url}}get"
+							],
+							"path": [
+								"sent"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "TrumpetBox Cloud API KEY"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}",
+									"description": "Pagination number to navigate result sets (Optional)\n\n"
+								},
+								{
+									"key": "device",
+									"value": "{{device}}",
+									"description": "Get messages only from specific device (Optional)"
+								},
+								{
+									"key": "api",
+									"value": "{{api}}",
+									"description": "Only get sent messages by API (Optional)\n1 = Yes\n0 = No (Default)"
+								},
+								{
+									"key": "priority",
+									"value": "{{priority}}",
+									"description": "Only get prioritized sent messages (Optional)\n1 = Yes\n0 = No (Default)"
+								},
+								{
+									"key": "limit",
+									"value": "{{limit}}",
+									"description": "Number of results to return, default is 10 (Optional)\n\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 22:44:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "531"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"List of sent messages on LM-X210(G)\",\"data\":[{\"sim\":1,\"api\":true,\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Welcome\",\"priority\":true,\"timestamp\":1594850880},{\"sim\":1,\"api\":true,\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Welcome\",\"priority\":true,\"timestamp\":1594498075},{\"sim\":1,\"api\":false,\"device\":4,\"phone\":\"+918088993456\",\"message\":\"Contact Tracing Notification for jkhk asd asd at +918088993456.\\r\\nToday is July 11, 2020 at 03:22 PM. You are receiving this notification to inform you that you may have been exposed to someone with symptoms of Covid-19 recently. We recommend that you follow the recommended guidelines set by your Local, State, and Federal Governments.\",\"priority\":true,\"timestamp\":1594480923},{\"sim\":1,\"api\":false,\"device\":4,\"phone\":\"+919078654321\",\"message\":\"Contact Tracing Notification for aasdf asf at +919078654321.\\r\\nToday is July 11, 2020 at 03:22 PM. You are receiving this notification to inform you that you may have been exposed to someone with symptoms of Covid-19 recently. We recommend that you follow the recommended guidelines set by your Local, State, and Federal Governments.\",\"priority\":true,\"timestamp\":1594480923},{\"sim\":1,\"api\":false,\"device\":4,\"phone\":\"+15175809858\",\"message\":\"Contact Tracing Notification for tester6 at +15175809858.\\r\\nToday is July 11, 2020 at 03:22 PM. You are receiving this notification to inform you that you may have been exposed to someone with symptoms of Covid-19 recently. We recommend that you follow the recommended guidelines set by your Local, State, and Federal Governments.\",\"priority\":true,\"timestamp\":1594480923},{\"sim\":1,\"api\":false,\"device\":4,\"phone\":\"+19704127249\",\"message\":\"Contact Tracing Notification for Mostafa 5 at +19704127249.\\r\\nToday is July 11, 2020 at 03:22 PM. You are receiving this notification to inform you that you may have been exposed to someone with symptoms of Covid-19 recently. We recommend that you follow the recommended guidelines set by your Local, State, and Federal Governments.\",\"priority\":true,\"timestamp\":1594480923},{\"sim\":1,\"api\":false,\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Contact Tracing Notification for Brandi at +15174555613.\\r\\nToday is July 11, 2020 at 03:22 PM. You are receiving this notification to inform you that you may have been exposed to someone with symptoms of Covid-19 recently. We recommend that you follow the recommended guidelines set by your Local, State, and Federal Governments.\",\"priority\":true,\"timestamp\":1594480923},{\"sim\":1,\"api\":false,\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Contact Tracing Notification for +15174555613 at +15174555613.\\r\\nToday is July 11, 2020 at 03:22 PM. You are receiving this notification to inform you that you may have been exposed to someone with symptoms of Covid-19 recently. We recommend that you follow the recommended guidelines set by your Local, State, and Federal Governments.\",\"priority\":true,\"timestamp\":1594480923},{\"sim\":1,\"api\":true,\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Welcome\",\"priority\":true,\"timestamp\":1594480259},{\"sim\":1,\"api\":true,\"device\":4,\"phone\":\"+15174555613\",\"message\":\"Welcome\",\"priority\":true,\"timestamp\":1594479674}]}"
+				}
+			]
+		},
+		{
+			"name": "Messages - Send Message From Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "phone",
+							"value": "{{phone}}",
+							"description": "Recipient mobile number, must satisfy E164 format",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "{{message}}",
+							"description": "Message to be sent to recipient",
+							"type": "text"
+						},
+						{
+							"key": "device",
+							"value": "{{device}}",
+							"description": "ID of device where you want to send the message, default is automatic (Optional)",
+							"type": "text"
+						},
+						{
+							"key": "sim",
+							"value": "{{sim}}",
+							"description": "Sim slot number for sending message, if the slot is not available, default slot will be used. Default is \"1\" (Optional)",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "{{priority}}",
+							"description": "Send the message as priority (Optional)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}send?key={{API_KEY}}",
+					"host": [
+						"{{url}}send"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Messages - Send Message From Account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "phone",
+									"value": "{{phone}}",
+									"description": "Recipient mobile number, must satisfy E164 format",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "{{message}}",
+									"description": "Message to be sent to recipient",
+									"type": "text"
+								},
+								{
+									"key": "device",
+									"value": "{{device}}",
+									"description": "ID of device where you want to send the message, default is automatic (Optional)",
+									"type": "text"
+								},
+								{
+									"key": "sim",
+									"value": "{{sim}}",
+									"description": "Sim slot number for sending message, if the slot is not available, default slot will be used. Default is \"1\" (Optional)",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "{{priority}}",
+									"description": "Send the message as priority (Optional)",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}send?key={{API_KEY}}",
+							"host": [
+								"{{url}}send"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}"
+								},
+								{
+									"key": "device",
+									"value": "{{device}}",
+									"description": "ID of device where you want to send the message, default is automatic (Optional)",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "{{phone}}",
+									"description": "Recipient mobile number, must satisfy E164 format",
+									"disabled": true
+								},
+								{
+									"key": "sim",
+									"value": "{{sim}}",
+									"description": "Sim slot number for sending message, if the slot is not available, default slot will be used. Default is \"1\" (Optional)",
+									"disabled": true
+								},
+								{
+									"key": "priority",
+									"value": "{{priority}}",
+									"description": "Send the message as priority (Optional)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 23:04:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"Message has been added to queue on LM-X210(G)\",\"data\":{\"api\":true,\"sim\":1,\"device\":4,\"phone\":\"+15175555555\",\"message\":\"TESTER TESTER\",\"priority\":false,\"timestamp\":1594940695}}"
+				}
+			]
+		},
+		{
+			"name": "Address Book - Create Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}create/contact?key={{API_KEY}}",
+					"host": [
+						"{{url}}create"
+					],
+					"path": [
+						"contact"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Address Book - Create Contact",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}create/contact?key={{API_KEY}}",
+							"host": [
+								"{{url}}create"
+							],
+							"path": [
+								"contact"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "TrumpetBox Cloud API KEY"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jul 2020 23:51:58 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":400,\"message\":\"Contact number already exist!\",\"data\":false}"
+				}
+			]
+		},
+		{
+			"name": "Address Book - Create Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"description": "Name of contact group",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}create/group?key={{API_KEY}}",
+					"host": [
+						"{{url}}create"
+					],
+					"path": [
+						"group"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}",
+							"description": "TrumpetBox Cloud API KEY"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Address Book - Create Group",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"description": "Name of contact group",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}create/group?key={{API_KEY}}",
+							"host": [
+								"{{url}}create"
+							],
+							"path": [
+								"group"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API_KEY}}",
+									"description": "TrumpetBox Cloud API KEY"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 17 Jul 2020 00:01:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "90"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"status\":200,\"message\":\"Contact group saved sauccessfully!\",\"data\":false}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "71d8d57a-4b8d-406c-b7df-800576cdcc7d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3ce45106-decd-4332-bdff-680eb5576923",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
