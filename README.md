@@ -1,5 +1,6 @@
-[![TrumpetBox Home](https://trumpetbox.com/assets/images/trumpetbox-logo.svg)](https://trumpetbox.com)
 [![TrumpetBox Home](https://trumpetbox.com/assets/images/home.svg)](https://trumpetbox.com)
+[![TrumpetBox Home](https://trumpetbox.com/assets/images/trumpetbox-logo.svg)](https://trumpetbox.com)
+
 
 # TrumpetBox Cloud API/SDK
 
